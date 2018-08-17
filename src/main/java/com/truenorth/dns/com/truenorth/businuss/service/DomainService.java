@@ -10,10 +10,22 @@ import java.util.List;
 @Service
 public class DomainService {
     private DomainRepository domainRepository;
+
     @Autowired
     public DomainService(DomainRepository domainRepository) {
         this.domainRepository = domainRepository;
     }
-   // Iterable<Domain> domains = this.domainRepository.findAll();
+
+    public boolean getDomain(String domainName){
+
+        Iterable<Domain> domains = this.domainRepository.findAll();
+        
+
+        return false;
+    }
+
+
+
+
 
 }

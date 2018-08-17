@@ -1,12 +1,9 @@
 package com.truenorth.dns.com.truenorth.data.entity;
-
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "DOMAIN")
 public class Domain {
-
     @Id
     @Column(name = "DOMAIN_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
